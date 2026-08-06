@@ -15,7 +15,7 @@ The API client can be initialized as follows:
 
 ```java
 import cloud.greenbyte.intro.Environment;
-import cloud.greenbyte.intro.GreenbyteApiClient;
+import cloud.greenbyte.intro.GreenbyteClient;
 import cloud.greenbyte.intro.authentication.CustomHeaderAuthenticationModel;
 import cloud.greenbyte.intro.exceptions.ApiException;
 import cloud.greenbyte.intro.http.response.ApiResponse;
@@ -23,7 +23,7 @@ import org.slf4j.event.Level;
 
 public class Program {
     public static void main(String[] args) {
-        GreenbyteApiClient client = new GreenbyteApiClient.Builder()
+        GreenbyteClient client = new GreenbyteClient.Builder()
             .loggingConfig(builder -> builder
                     .level(Level.DEBUG)
                     .requestConfig(logConfigBuilder -> logConfigBuilder.body(true))

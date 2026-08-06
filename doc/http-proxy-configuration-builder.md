@@ -24,10 +24,10 @@ To configure the SDK to use a proxy server, initialize the proxy configuration d
 ## Usage Example
 
 ```java
-import cloud.greenbyte.intro.GreenbyteApiClient;
+import cloud.greenbyte.intro.GreenbyteClient;
 import cloud.greenbyte.intro.http.client.HttpProxyConfiguration;
 
-GreenbyteApiClient client = new GreenbyteApiClient.Builder()
+GreenbyteClient client = new GreenbyteClient.Builder()
   .httpClientConfig(configBuilder -> configBuilder
       .proxyConfig(new HttpProxyConfiguration.Builder("http://localhost",
           8080).auth("username", "password")))

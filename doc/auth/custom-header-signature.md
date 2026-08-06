@@ -22,12 +22,12 @@ Documentation for accessing and setting credentials for ApiKeyHeaderAuth.
 You must provide credentials in the client as shown in the following code snippet.
 
 ```java
-import cloud.greenbyte.intro.GreenbyteApiClient;
+import cloud.greenbyte.intro.GreenbyteClient;
 import cloud.greenbyte.intro.authentication.CustomHeaderAuthenticationModel;
 
 public class Program {
     public static void main(String[] args) {
-        GreenbyteApiClient client = new GreenbyteApiClient.Builder()
+        GreenbyteClient client = new GreenbyteClient.Builder()
             .customHeaderAuthenticationCredentials(new CustomHeaderAuthenticationModel.Builder(
                     "X-Api-Key"
                 )
